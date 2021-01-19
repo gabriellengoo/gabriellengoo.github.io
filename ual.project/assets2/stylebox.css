@@ -1,0 +1,16 @@
+#p5Canvas{
+    /* width: 100vw;
+    height: 100vh; */
+    /* display: inline-block;
+    border: 2px solid black;
+    margin: 25px; */
+    position: absolute;
+    left: 43%;
+    height: 50%;
+    z-index: -100;
+    padding: 500px;
+}
+
+body {
+    background-color: rgb(15,15,15);
+   }
