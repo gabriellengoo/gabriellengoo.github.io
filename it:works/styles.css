@@ -54,11 +54,11 @@ span {
 
 
 body.main {
-    --color-text: #fff;
+    --color-text: #3b3b3b;
     --color-bg: #171717;
-    --color-link: #282828 ;
+    --color-link: rgb(244,244,244) ;
     background-color: var(--color-bg);
-    width: 100%;
+    width: 100vw;
   overflow-x: hidden;
   font-family: AvenirNext, Avenir, -apple-system, BlinkMacSystemFont,
     "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun,
@@ -73,22 +73,8 @@ body.main {
   -webkit-tap-highlight-color: transparent;
   text-rendering: optimizeLegibility;
   text-size-adjust: 100%;
-  color: #ddd;
+  color:  rgb(172, 172, 172);
   line-height: 1.7;
-  }
-
-  .page {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .page__inner {
-    display: flex;
-    justify-content: center;
-    width: 100%;
   }
 
   .cursor {
@@ -96,8 +82,7 @@ body.main {
     left: 0;
     top: 0;
     pointer-events: none;
-    color:  #ffffff;
-    /* backdrop-filter: blur(3); */
+    color:  #3b3b3b;
     }
 
    .cursor--small {
@@ -110,6 +95,7 @@ body.main {
     background: var(--color-text);
     mix-blend-mode: difference;
   }
+
   .cursor--canvas {
     width: 100vw;
     height: 100vh;
@@ -117,70 +103,197 @@ body.main {
     mix-blend-mode: difference;
   }
 
-  .nav {
-    display: flex;
+  /* .nav { */
+    /* display: flex;
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);  
-    
-  }
+    transform: translate(-50%, -50%);   */
+    /* float: left; */
+    /* width: 300px; */
+    /* padding: 10px; */
+  /* } */
 
-  .nav-links {
-    /* display: flex; */
-    width: 75px;
+  /* .nav-links { */
+    /* width: 75px;
     height: 75px;
     margin: auto;
-    min-height: 10vh;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none; 
-  }
+    min-height: 10vh; */
+    /* align-items: left; */
+    /* list-style: none; 
+    text-align: center; */
+  /* } */
 
-  .nav-links:hover {
-    color: #282828 ;
+  /* .nav-links:hover {
+    color: rgb(244,244,244) ;
     mix-blend-mode: difference;
-  }
-
-
-
-
-
-  /* .settings-icon {
-    display: block;
-    width: 40px;
-    height: 40px;
-  }
-  .settings-icon__line {
-    stroke: var(--color-text);
-    stroke-width: 5px;
-    transition: all 0.2s ease 0.05s;
-  } 
-
-  .settings-icon__rect {
-    stroke: var(--color-text);
-    fill: var(--color-bg);
-    stroke-width: 5px;
-    transition: all 0.2s ease 0.05s;
   } */
+
+  .about{
+  position: absolute;
+  left: 1%;
+  top: 11.7%;
+  padding: 10px;
+  font-size: x-small;
+  font-weight: bold;
   
-  /* .link:hover .settings-icon__line,
-  .link:hover .settings-icon__rect {
-    stroke: var(--color-link);
-    transition: all 0.2s ease 0.05s;
   }
-  .link:hover .settings-icon__group--1 .settings-icon__rect {
-    transform: translateY(20px);
+
+  .abouts{
+    position: absolute;
+    left: 1%;
+    top: 13%;
+    padding: 10px;
+    font-size: medium;
+    width: 500px;
+    color:  rgb(172, 172, 172);
+    }
+
+
+    .aboutbasic{
+    position: absolute;
+    left: 12.5%;
+    top: 19.8%;
+    padding: 10px;
+    font-size: medium;
+    /* font-weight: bold; */
+    color:  rgb(172, 172, 172);
+    font-family: URW Chancery L, cursive;
+    }
+
+    .aboutbasic:hover{
+      transform: skew(20deg);
+      color:  rgb(49, 49, 49);
+    }
+
+
+
+
+
+
+  .socials{
+  position: absolute;
+  top: 39%;
+  left: 1%;
+  padding: 10px;
+  font-size: x-small;
+  font-weight: bold;
   }
-  .link:hover .settings-icon__group--2 .settings-icon__rect {
-    transform: translateY(-20px);
+
+  .arena{
+    position: absolute;
+    left: 1%;
+    top: 40%;
+    padding: 10px;
+    font-size: medium;
+    color:  rgb(172, 172, 172);
+    font-family: URW Chancery L, cursive;
   }
-  .link:hover .settings-icon__group--3 .settings-icon__rect {
-    transform: translateY(25px);
-  } */
+
+
+  .insta{
+    position: absolute;
+    left: 1%;
+    top: 44%;
+    padding: 10px;
+    font-size: medium;
+    color:  rgb(172, 172, 172);
+    font-family: URW Chancery L, cursive;
+  }
+
+  .spotify{
+    position: absolute;
+    left: 1%;
+    top: 48%;
+    padding: 10px;
+    font-size: medium;
+    color:  rgb(172, 172, 172);
+    font-family: URW Chancery L, cursive;
+  }
+
+  .insta:hover{
+    transform: skew(20deg);
+    color:  rgb(49, 49, 49);
+  }
+
+  .spotify:hover{
+    transform: skew(20deg);
+    color:  rgb(49, 49, 49);
+  }
+
+  .arena:hover{
+    transform: skew(20deg);
+    color:  rgb(49, 49, 49);
+  }
+
+
+
+
+
+  .contacts{
+  position: absolute;
+  left: 1%;
+  top: 28%;
+  padding: 10px;
+  font-size: x-small;
+  font-weight: bold;
+  }
+
+  .email{
+    position: absolute;
+    left: 1%;
+    top: 29%;
+    padding: 10px;
+    font-size: medium;
+    color:  rgb(172, 172, 172);
+    /* font-weight: bold; */
+    font-family: URW Chancery L, cursive;
+    content:"email"
+    }
+
+    .email:hover{
+      transform: skew(20deg);
+      /* backdrop-filter: blur(30); */
+      color:  rgb(172, 172, 172);;
+    }
+
+    .email:hover:before {content:"gabriellengoo@hotmail.com"}
+
+
+  
+
+  
 
   .page, .page a {
     cursor: none;
    } 
+
+   h1{
+    position: absolute;
+    left: 1%;
+    top: 1%;
+    padding: 10px;
+    font-size: x-small;
+    font-weight: bold;
+    color:  rgb(172, 172, 172);
+   }
+
+   .date{
+    left: 1%;
+    top: 95%;
+    padding: 10px;
+    font-weight: bold;
+    color:  rgb(172, 172, 172);
+   }
+
+   .dob{
+    position: absolute;
+    left: 95%;
+    top: 95%;
+    padding: 10px;
+    font-size: x-small;
+    font-weight: bold;
+    color:  rgb(172, 172, 172);
+   }
 
    

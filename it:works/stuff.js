@@ -9,6 +9,7 @@
 // // }
 
 // set the starting position of the cursor outside of the screen
+
 let clientX = -100;
 let clientY = -100;
 const innerCursor = document.querySelector(".cursor--small");
@@ -51,10 +52,12 @@ const initCanvas = () => {
     height: 75
   };
   paper.setup(canvas);
-  const strokeColor = 'rgba(255,255,255)';
+  const strokeColor = 'rgb(244,244,244)';
   const strokeWidth = 30;
   const segments = 8;
   const radius = 50;
+
+  
   
   
   // we'll need these later for the noisy circle
@@ -157,6 +160,8 @@ paper.view.onFrame = event => {
     }
     polygon.smooth();
   };
+
+  
 }
 
 initCanvas();
@@ -180,12 +185,39 @@ const initHovers = () => {
     };
     
     // add event listeners to all items
-    const linkItems = document.querySelectorAll('.nav-links');
-    linkItems.forEach(item => {
-      item.addEventListener("mouseenter", handleMouseEnter);
-      item.addEventListener("mouseleave", handleMouseLeave);
+    const linkItems = document.querySelectorAll('.insta');
+    linkItems.forEach(link => {
+      link.addEventListener("mouseenter", handleMouseEnter);
+      link.addEventListener("mouseleave", handleMouseLeave);
     });
+
+    const linkItems2 = document.querySelectorAll('.email');
+    linkItems2.forEach(link => {
+      link.addEventListener("mouseenter", handleMouseEnter);
+      link.addEventListener("mouseleave", handleMouseLeave);
+    });
+
+    const linkItems3 = document.querySelectorAll('.arena');
+    linkItems3.forEach(link => {
+      link.addEventListener("mouseenter", handleMouseEnter);
+      link.addEventListener("mouseleave", handleMouseLeave);
+    });
+
+    const linkItems4 = document.querySelectorAll('.spotify');
+    linkItems4.forEach(link => {
+      link.addEventListener("mouseenter", handleMouseEnter);
+      link.addEventListener("mouseleave", handleMouseLeave);
+    });
+
+    const linkItems5 = document.querySelectorAll('.aboutbasic');
+    linkItems5.forEach(link => {
+      link.addEventListener("mouseenter", handleMouseEnter);
+      link.addEventListener("mouseleave", handleMouseLeave);
+    });
+
   };
+
+  
   
   initHovers();
 
