@@ -1,4 +1,12 @@
+// // let mouseCursor = document.querySelector('.cursor');
+// let navLinks = document.querySelectorAll('.nav-links li');
 
+// // window.addEventListener('mousemove', cursor);
+
+// // function cursor (e){
+// //   mouseCursor.style.top = e.pageY + 'px';
+// //   mouseCursor.style.left = e.pageX + 'px';
+// // }
 
 // set the starting position of the cursor outside of the screen
 let clientX = -100;
@@ -43,11 +51,11 @@ const initCanvas = () => {
     height: 75
   };
   paper.setup(canvas);
-  const strokeColor = 'rgba(255,255,255,.38)';
-  const strokeWidth = 1;
+  const strokeColor = 'rgba(255,255,255)';
+  const strokeWidth = 30;
   const segments = 8;
-  const radius = 15;
-//const background = '#ddd';
+  const radius = 50;
+  
   
   // we'll need these later for the noisy circle
   const noiseScale = 150; // speed
@@ -172,7 +180,7 @@ const initHovers = () => {
     };
     
     // add event listeners to all items
-    const linkItems = document.querySelectorAll(".link");
+    const linkItems = document.querySelectorAll('.nav-links');
     linkItems.forEach(item => {
       item.addEventListener("mouseenter", handleMouseEnter);
       item.addEventListener("mouseleave", handleMouseLeave);

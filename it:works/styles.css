@@ -34,12 +34,6 @@ body.main {
   background: #282828;
 }
 
-.nav {
-  margin: 200px 0;
-  line-height: 1;
-  font-size: 128px;
-  font-weight: 900;
-}
 
 .page__inner {
   margin: 100px 0;
@@ -59,13 +53,10 @@ span {
 
 
 
-
-
-
 body.main {
     --color-text: #fff;
     --color-bg: #171717;
-    --color-link: #282828;
+    --color-link: #282828 ;
     background-color: var(--color-bg);
     width: 100%;
   overflow-x: hidden;
@@ -100,7 +91,7 @@ body.main {
     width: 100%;
   }
 
-    .cursor {
+  .cursor {
     position: fixed;
     left: 0;
     top: 0;
@@ -117,11 +108,13 @@ body.main {
     border-radius: 50%;
     z-index: 11000;
     background: var(--color-text);
+    mix-blend-mode: difference;
   }
   .cursor--canvas {
     width: 100vw;
     height: 100vh;
     z-index: 12000;
+    mix-blend-mode: difference;
   }
 
   .nav {
@@ -130,16 +123,30 @@ body.main {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);  
+    
   }
-  .link {
-    display: flex;
+
+  .nav-links {
+    /* display: flex; */
     width: 75px;
     height: 75px;
-    margin: 0 5px;
-    justify-content: center;
+    margin: auto;
+    min-height: 10vh;
+    justify-content: space-between;
     align-items: center;
+    list-style: none; 
   }
-  .settings-icon {
+
+  .nav-links:hover {
+    color: #282828 ;
+    mix-blend-mode: difference;
+  }
+
+
+
+
+
+  /* .settings-icon {
     display: block;
     width: 40px;
     height: 40px;
@@ -155,9 +162,9 @@ body.main {
     fill: var(--color-bg);
     stroke-width: 5px;
     transition: all 0.2s ease 0.05s;
-  }
+  } */
   
-  .link:hover .settings-icon__line,
+  /* .link:hover .settings-icon__line,
   .link:hover .settings-icon__rect {
     stroke: var(--color-link);
     transition: all 0.2s ease 0.05s;
@@ -170,7 +177,7 @@ body.main {
   }
   .link:hover .settings-icon__group--3 .settings-icon__rect {
     transform: translateY(25px);
-  }
+  } */
 
   .page, .page a {
     cursor: none;
