@@ -172,7 +172,10 @@ body.main {
 
     .aboutbasic:hover{
       transform: skew(20deg);
-      color:  rgb(49, 49, 49);
+    }
+
+    .aboutbasic:hover:before {
+      content:"It's"
     }
 
 
@@ -225,18 +228,26 @@ body.main {
 
   .insta:hover{
     transform: skew(20deg);
-    color:  rgb(49, 49, 49);
+
   }
 
   .spotify:hover{
     transform: skew(20deg);
-    color:  rgb(49, 49, 49);
+
+  }
+
+  .spotify:hover:before {
+    content:"What i am listening to"
   }
 
   .arena:hover{
     transform: skew(20deg);
-    color:  rgb(49, 49, 49);
   }
+
+  .arena:hover:before {
+    content:"My insperation"
+  }
+
 
 
 
