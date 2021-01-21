@@ -51,18 +51,22 @@ span {
 } */
 
 
+html { 
+  -webkit-font-smoothing: antialiased; 
+  scroll-behavior: smooth;
+
+}
+
 
 
 body.main {
     --color-text: #3b3b3b;
-    --color-bg: #171717;
+    --color-bg: 	#373538;
     --color-link: rgb(244,244,244) ;
     background-color: var(--color-bg);
     width: 100vw;
   overflow-x: hidden;
-  font-family: AvenirNext, Avenir, -apple-system, BlinkMacSystemFont,
-    "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun,
-    sans-serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif, STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -75,6 +79,11 @@ body.main {
   text-size-adjust: 100%;
   color:  rgb(172, 172, 172);
   line-height: 1.7;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-snap-align: start;
+  scroll-snap-stop: always
+  
   }
 
   .cursor {
@@ -142,23 +151,23 @@ body.main {
   .abouts{
     position: absolute;
     left: 1%;
-    top: 13%;
+    top: 5%;
     padding: 10px;
-    font-size: medium;
+    font-size: small;
     width: 500px;
-    color:  rgb(172, 172, 172);
+    color:  #e1e1e1;
     }
 
 
     .aboutbasic{
     position: absolute;
-    left: 12.5%;
-    top: 19.8%;
+    left: 32.7%;
+    top: 7.7%;
     padding: 10px;
-    font-size: medium;
-    /* font-weight: bold; */
-    color:  rgb(172, 172, 172);
-    font-family: URW Chancery L, cursive;
+    font-size: small;
+    font-weight: bold;
+    color:  #e1e1e1;
+    /* font-family: URW Chancery L, cursive; */
     }
 
     .aboutbasic:hover{
@@ -182,33 +191,36 @@ body.main {
 
   .arena{
     position: absolute;
-    left: 1%;
-    top: 40%;
+    left: 50%;
+    top: 1%;
     padding: 10px;
-    font-size: medium;
-    color:  rgb(172, 172, 172);
-    font-family: URW Chancery L, cursive;
+    font-size: small;
+    color:  #e1e1e1;
+    font-weight: bold;
+    /* font-family: URW Chancery L, cursive; */
   }
 
 
   .insta{
     position: absolute;
-    left: 1%;
-    top: 44%;
+    left: 50%;
+    top: 5%;
     padding: 10px;
-    font-size: medium;
-    color:  rgb(172, 172, 172);
-    font-family: URW Chancery L, cursive;
+    font-size: small;
+    color:  #e1e1e1;
+    font-weight: bold;
+    /* font-family: URW Chancery L, cursive; */
   }
 
   .spotify{
     position: absolute;
-    left: 1%;
-    top: 48%;
+    left: 50%;
+    top: 9%;
     padding: 10px;
-    font-size: medium;
-    color:  rgb(172, 172, 172);
-    font-family: URW Chancery L, cursive;
+    font-size: small;
+    color:  #e1e1e1;
+    font-weight: bold;
+    /* font-family: URW Chancery L, cursive; */
   }
 
   .insta:hover{
@@ -233,28 +245,29 @@ body.main {
   .contacts{
   position: absolute;
   left: 1%;
-  top: 28%;
+  top: 30%;
   padding: 10px;
-  font-size: x-small;
+  font-size: small;
   font-weight: bold;
   }
 
   .email{
     position: absolute;
-    left: 1%;
-    top: 29%;
+    left: 50%;
+    top: 13%;
     padding: 10px;
     font-size: medium;
-    color:  rgb(172, 172, 172);
-    /* font-weight: bold; */
-    font-family: URW Chancery L, cursive;
-    content:"email"
+    color:  #e1e1e1;
+    font-weight: bold;
+    /* font-family: URW Chancery L, cursive; */
+    content:"email";
+    font-size: small;
     }
 
     .email:hover{
       transform: skew(20deg);
       /* backdrop-filter: blur(30); */
-      color:  rgb(172, 172, 172);;
+      color:  #e1e1e1;
     }
 
     .email:hover:before {content:"gabriellengoo@hotmail.com"}
@@ -268,14 +281,29 @@ body.main {
     cursor: none;
    } 
 
+   a{
+    position: absolute;
+    left: 50%;
+    top: 13%;
+    padding: 10px;
+    font-size: medium;
+    color:  #e1e1e1;
+    font-weight: bold;
+    /* font-family: URW Chancery L, cursive; */
+    content:"email";
+    font-size: small;
+    text-decoration: none;
+   }
+
    h1{
     position: absolute;
     left: 1%;
     top: 1%;
     padding: 10px;
-    font-size: x-small;
+    font-size: small;
     font-weight: bold;
-    color:  rgb(172, 172, 172);
+    color:  #e1e1e1;
+    /* width: 200vw; */
    }
 
    .date{
