@@ -1,0 +1,442 @@
+
+/* page styles------------------------------------------  */
+html {
+    /* --color-text:#2f2f2f; */
+    --color-text:#b4b4b4;
+    --color-bg: #f2f2f2;
+    --sizeh3:120%;
+    --sizeli:40%;
+    --color-hover: #c7c7c7;
+    /* --color-link: rgb(244,244,244) ; */
+    background-color: var(--color-bg);
+    -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
+    /* width: 100vw;
+    height: 100vh; */
+  }
+   
+
+
+
+
+
+
+
+/* ball style------------------------------------------  */
+/* .ball {
+    position: 'absolute';
+    background: var(--color-text);
+    display: block;
+    border-radius: 50%;
+    height: 400px;
+    width: 400px;
+    margin: 0; 
+} */
+
+
+
+
+
+
+
+/* main menu ------------------------------------------ */
+.vertical-menu {
+    width: 150px; /* Set a width if you like */
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    padding: 2%;
+    mix-blend-mode: difference;
+  }
+  
+  .vertical-menu a {
+    float: left;
+    color: var(--color-text);
+    display: block; /* Make the links appear below each other */
+    text-decoration: none; /* Remove underline from links */
+    font-size: var(--sizeh3);
+     padding: 2%;
+     font-family: itc-avant-garde-gothic-pro,sans-serif;
+     font-style:normal;
+     font-weight:normal;
+     
+  }
+  
+  .vertical-menu a:hover {
+    /* color: var(--color-hover); */
+    color: #2f2f2f;
+    font-family: kepler-std, serif;
+   font-style: italic;
+
+  }
+
+  .vertical-menu a.active {
+    color: #2f2f2f;
+    font-family: kepler-std, serif;
+   font-style: italic;
+
+  }
+
+
+
+
+
+
+/* basic nav ------------------------------------------ */
+  .topnav-centered {
+    float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: difference;
+  text-decoration: none;
+    font-size: 900%;
+     color: #c2c2c2;
+     font-family: franklin-gothic-urw, sans-serif;
+     font-weight: 400;
+     font-style: normal;
+  }
+
+  /* .topnav-centered a {
+    text-decoration: none;
+    font-size: 1500%;
+     color: #c9c9c9;
+    font-family: degular, sans-serif;
+    font-style: normal;
+    font-weight: 200;
+  } */
+
+  /* .topnav-centered:hover::after{
+    content: "ally";
+    font-family: kepler-std, serif;
+    font-style: italic;
+    color: #c2c2c2;
+    font-size: 100%;
+} */
+
+
+
+h1:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+  
+  @keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+
+
+
+
+  /* projects link ------------------------------------------ */
+.right {
+  /* overflow: hidden; */
+  position: fixed;
+  top: 50%;
+  width: 100%;
+  mix-blend-mode: difference;
+}
+
+.right a {
+    float: right;
+    color: var(--color-text);
+     text-decoration: none; /* Remove underline from links */
+     font-size: var(--sizeh3);
+     padding: 2%;
+     font-family: itc-avant-garde-gothic-pro,sans-serif;
+     font-style:normal;
+     font-weight: normal;
+  }
+
+  .right a.active {
+    color: #2f2f2f;
+    font-family: kepler-std, serif;
+   font-style: italic;
+  }
+
+  .right a:hover {
+    color: #2f2f2f;
+    font-family: kepler-std, serif;
+   font-style: italic;
+  }
+
+
+
+
+  
+/* bottom menu contact------------------------------------------ */
+.navbarbottom {
+    width: 170px; /* Set a width if you like */
+    position: fixed;
+    bottom: 0;
+    overflow: hidden;
+    padding: 2%;
+    mix-blend-mode: difference;
+}
+
+
+.navbarbottom a {
+    float: left;
+    display: block;
+    text-decoration: none;
+    font-size: var(--sizeh3);
+    color: var(--color-text);
+     padding: 2%;
+     font-family: itc-avant-garde-gothic-pro,sans-serif;
+     font-style:normal;
+     font-weight: normal;
+  }
+
+  .navbarbottom a:hover {
+    color: #2f2f2f;
+    font-family: kepler-std, serif;
+   font-style: italic;
+  }
+
+  .navbarbottom a.active {
+    color: #2f2f2f;
+    font-family: kepler-std, serif;
+   font-style: italic;
+  }
+
+
+
+
+
+
+
+
+
+
+  /* year of work */
+                        /* mabye put on new page------------------------------------------  */
+/* .year1{
+   position: absolute;
+   font-family: kepler-std, serif;
+    font-style: italic;
+   top: 15%;
+   left: 50vw;
+   font-size: var(--sizeh3);
+   color: var(--color-text);
+   font-weight: bold;
+}
+
+.year2{
+   position: absolute;
+   font-family: kepler-std, serif;
+    font-style: italic;
+   top: 15%;
+   left: 60%;
+   font-size: var(--sizeh3);
+   color: var(--color-text);
+   font-weight: bold;
+} */
+
+
+/* list of work */
+/* mabye put on new page */
+/* .pro1{
+   position: absolute;
+   top: 25%;
+   left: 50vw;
+   font-size: var( --sizeli);
+   color: var(--color-text);
+   list-style: none;
+   font-family: kepler-std, serif;
+   font-style: italic;
+}
+
+.pro2{
+   position: absolute;
+   top: 30%;
+   left: 50vw;
+   font-size: var( --sizeli);
+   color: var(--color-text);
+   list-style: none;
+   font-family: kepler-std, serif;
+   font-style: italic;
+}
+.pro3{
+   position: absolute;
+   top: 35%;
+   left: 50vw;
+   font-size: var( --sizeli);
+   color: var(--color-text);
+   list-style: none;
+   font-family: kepler-std, serif;
+   font-style: italic;
+}
+.pro4{
+   position: absolute;
+   top: 25%;
+   left: 60%;
+   font-size: var( --sizeli);
+   color: var(--color-text);
+   list-style: none;
+   font-family: kepler-std, serif;
+   font-style: italic;
+} */
+
+
+
+
+/* about link ------------------------------------------ */
+/* .about{
+    font-size: var(--sizeh3);
+    color: var(--color-text);
+    font-family: itc-avant-garde-gothic-pro,sans-serif;
+    font-style:normal;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.about:hover{
+    cursor:pointer;
+    text-decoration: none;
+    color: var(--color-text);
+  }
+  
+  .about:hover::after {
+    border-color: var(--color-text);
+    right: 0;
+  }
+  
+  .about::after {
+    border-radius: 0.5em;
+    border-top: .1em solid var(--color-text);
+    content: "";
+    position: absolute;
+      right: 100%;
+      left: 0;
+    transition: right .4s cubic-bezier(0,.5,0,1),
+                border-color .4s ease-out;
+                mix-blend-mode: multiply;  
+  } */
+
+
+
+
+
+
+
+
+/* for phones-------------------------- */
+@media (max-width: 600px) {
+    .topnav-centered{
+        font-size: 200%;
+    }
+
+    .right a{
+        float: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    text-decoration: none;
+    }
+
+    .right{
+        float: none;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    html{
+        --sizeh3:100%;
+    }
+
+    .vertical-menu {
+        width: 100%; /* Set a width if you like */
+      }
+}
+
+/* Smartphones (portrait) ----------- */
+/* @media only screen and (min-device-width : 374px) {
+} */
+
+/* Smartphones (landscape) ----------- */
+/* @media only screen 
+and (min-width : 320px) and (max-width:  480px) {
+} */
+
+/* IPad----------- */
+/* @media only screen and (min-width: 481px) and (max-width: 768px){
+    } */
+
+
+    /* IPad pro----------- */
+/* @media only screen and (min-width: 481px) and (max-width: 768px){
+
+    } */
+
+
+/* Desktop----------- */
+/* @media only screen and (min-width: 1025px) and (min-height:  1200px)  {
+    } */
+
+
+    
+/* @media only screen and (min-width: 1200px) {
+  
+        } */
+    
+
+
+
+
+
+
+
+
+
+/* fonts -----------------------------------*/
+/* font-family: degular, sans-serif;
+font-style: normal;
+font-weight: 200; */
+
+ /* font-family: kepler-std, serif;
+     font-weight: 400;
+     font-style: italic; */
+
+     /* font-weight: bold; */
+     /* line-height: 100%; */
+    
+/* font-family: "aktiv-grotesk" ,sans-serif;
+     font-weight: 400;
+     font-style: normal; */
+
+/* font-family: franklin-gothic-urw, sans-serif;
+     font-weight: 400;
+     font-style: normal; */
+
+/* font-family: orpheuspro,
+     serif;
+     font-weight: 700;
+     font-style: normal; */
+
+/* font-family: baskerville-urw,serif;
+     font-weight: 400;
+     font-style: normal; */
+
+/* font-family: freight-big-pro,serif;
+     font-weight: 400;
+     font-style: normal; */

@@ -1,40 +1,41 @@
 
+
+
+
+
+
+
+
+
+html {
+  --color-text:#2f2f2f;
+  --color-bg: #f2f2f2;
+  --sizeh3:17px;
+  --sizeli:40px;
+  --color-hover: #c7c7c7;
+  /* --color-link: rgb(244,244,244) ; */
+  background-color: var(--color-bg);
+  /* width: 100%; */
+  /* overflow-x: hidden; */
+
+  /* font-stretch: normal;
+  user-select: none;
+  -webkit-font-smoothing: antialiased; */
+
+  /* vertical-align: baseline; */
+
+  /* -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+  text-rendering: optimizeLegibility;
+  text-size-adjust: 100%; */
+
+  /* color: #f7f7f7; */
+  /* line-height: 1.7; */
+
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+}
  
- html {
-     --color-text:#2f2f2f;
-     --color-bg: #f2f2f2;
-     --sizeh3:17px;
-     --sizeli:40px;
-     --color-hover: #c7c7c7;
-     /* --color-link: rgb(244,244,244) ; */
-     background-color: var(--color-bg);
-     /* width: 100%; */
-     /* overflow-x: hidden; */
-
-     /* font-stretch: normal;
-     user-select: none;
-     -webkit-font-smoothing: antialiased; */
-
-     /* vertical-align: baseline; */
-
-     /* -moz-osx-font-smoothing: grayscale;
-     -webkit-tap-highlight-color: transparent;
-     text-rendering: optimizeLegibility;
-     text-size-adjust: 100%; */
-
-     /* color: #f7f7f7; */
-     /* line-height: 1.7; */
-
-     -webkit-font-smoothing: antialiased;
-     scroll-behavior: smooth;
- }
-
-/* 
-.main{
-    display:block;
-} */
-
-
 
 
 
@@ -357,11 +358,11 @@ li{
     /* color: var(--color-text); */
   }
   
-  .projects:hover::after {
+  /* .projects:hover::after { */
     /* border-color: var(--color-hover); */
     /* border-color: var(--color-text);
     right: 0; */
-  }
+  /* } */
   
   /* .projects::after {
     border-radius: 0.5em;
@@ -434,10 +435,9 @@ li{
      justify-content: center; */
  }
 
- .two {
     /* background: rgb(70, 70, 70); */
 
- }
+
 
  /* .three {
     background:var(--color-bg);
@@ -471,6 +471,33 @@ li{
  ::-webkit-scrollbar {
      display: none;
  }
+
+
+
+ @media only screen and (max-device-width: 480px) {
+  .wrapper {
+      width: 400px;
+  }
+
+  .main {
+      height: 93px;
+      position: relative;
+  }
+
+  .pro1 {
+      font-size: 100%;
+  }
+
+  .name {
+      float: none;
+      width: 100%;
+  }
+
+  #navigation {
+      float:none;
+      width: auto;
+  }
+}
 
 
 
