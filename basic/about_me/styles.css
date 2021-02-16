@@ -1,0 +1,54 @@
+/* page styles------------------------------------------  */
+html {
+    --color-text:#2f2f2f;
+    /* --color-text:#b4b4b4; */
+    --color-bg: #f2f2f2;
+    --sizeh3:100%;
+    --sizeli:40%;
+    --color-hover: #c7c7c7;
+    /* --color-link: rgb(244,244,244) ; */
+    background-color: var(--color-bg);
+    -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
+    /* width: 100vw;
+    height: 100vh; */
+  }
+
+
+
+.close {
+    position: absolute;
+    opacity: 0.3;
+    width: 105px; /* Set a width if you like */
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    padding: 2%;
+    float: left;
+    color: var(--color-text);
+     /* Make the links appear below each other */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 100px;
+     padding: 2%;
+     font-family: itc-avant-garde-gothic-pro,sans-serif;
+     font-style:normal;
+     font-weight:normal;
+  }
+  
+  .close:hover {
+    opacity: 1;
+  }
+  .close:before, .close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: #333;
+  }
+  .close:before {
+    transform: rotate(45deg);
+  }
+  .close:after {
+    transform: rotate(-45deg);
+  }

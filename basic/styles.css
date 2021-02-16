@@ -1,14 +1,15 @@
 
 /* page styles------------------------------------------  */
 html {
-    /* --color-text:#2f2f2f; */
-    --color-text:#b4b4b4;
-    --color-bg: #f2f2f2;
-    --sizeh3:120%;
+    --color-text:rgb(202, 202, 202);
+    /* --color-text:#b4b4b4; */
+    --color-bg: rgb(255,255,255);
+    --sizeh3:100%;
     --sizeli:40%;
     --color-hover: #c7c7c7;
     /* --color-link: rgb(244,244,244) ; */
-    background-color: var(--color-bg);
+    /*Fallback if gradeints don't work */
+    /* background-color: var(--color-bg); */
     -webkit-font-smoothing: antialiased;
     scroll-behavior: smooth;
     /* width: 100vw;
@@ -16,7 +17,21 @@ html {
   }
    
 
+  
 
+/* Linear gradient------------------------------------------  */
+  .radial-gradient {
+    position:fixed;
+    top:0px;
+    left:0px;
+    height:100%;
+    width:100%;
+    /*Linear gradient... */
+    background: 
+      radial-gradient(
+       at center, #3498db, rgb(255,255,255),
+      );
+  }
 
 
 
@@ -35,24 +50,34 @@ html {
 
 
 
-
-
+/* name ------------------------------------------ */
+p{
+    color: var(--color-text);
+     /* Make the links appear below each other */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 150%;
+     padding-top: 2%;
+     padding-left: 2%;
+     padding-bottom:0ch;
+     font-family: itc-avant-garde-gothic-pro,sans-serif;
+     font-style:normal;
+     font-weight:bold;
+}
 
 
 /* main menu ------------------------------------------ */
 .vertical-menu {
-    width: 150px; /* Set a width if you like */
+    width: 105px; /* Set a width if you like */
     position: fixed;
     top: 0;
     overflow: hidden;
     padding: 2%;
-    mix-blend-mode: difference;
   }
   
   .vertical-menu a {
     float: left;
     color: var(--color-text);
-    display: block; /* Make the links appear below each other */
+     /* Make the links appear below each other */
     text-decoration: none; /* Remove underline from links */
     font-size: var(--sizeh3);
      padding: 2%;
@@ -64,7 +89,8 @@ html {
   
   .vertical-menu a:hover {
     /* color: var(--color-hover); */
-    color: #2f2f2f;
+    color: transparent;
+    text-shadow: 0 0 5px rgba(3, 252, 36, 0.5);
     font-family: kepler-std, serif;
    font-style: italic;
 
@@ -79,23 +105,43 @@ html {
 
 
 
+/* blur ------------------------------------------ */
+  /* .blur {
+    color: transparent;
+    text-shadow: 0 0 5px rgba(0,0,0,0.5);
+ } */
 
 
 
-/* basic nav ------------------------------------------ */
+/* basic logo ------------------------------------------ */
   .topnav-centered {
     float: none;
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 60%;
+  left:60%;
   transform: translate(-50%, -50%);
   mix-blend-mode: difference;
-  text-decoration: none;
+  /* text-decoration: none;
     font-size: 900%;
      color: #c2c2c2;
      font-family: franklin-gothic-urw, sans-serif;
      font-weight: 400;
-     font-style: normal;
+     font-style: normal; */
+  }
+
+  .topnav-centered2 {
+    float: none;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  mix-blend-mode:overlay;
+  /* text-decoration: none;
+    font-size: 900%;
+     color: #c2c2c2;
+     font-family: franklin-gothic-urw, sans-serif;
+     font-weight: 400;
+     font-style: normal; */
   }
 
   /* .topnav-centered a {
@@ -117,11 +163,11 @@ html {
 
 
 
-h1:hover {
+img:hover {
     animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
     transform: translate3d(0, 0, 0);
-    backface-visibility: hidden;
-    perspective: 1000px;
+    /* backface-visibility: hidden; */
+    perspective: 100px;
   }
   
   @keyframes shake {
@@ -149,20 +195,25 @@ h1:hover {
 .right {
   /* overflow: hidden; */
   position: fixed;
-  top: 50%;
+  top: 0%;
   width: 100%;
   mix-blend-mode: difference;
+  
 }
 
 .right a {
-    float: right;
+    /* float: right; */
+    display: inline-block;
+  display:-moz-inline-box;
     color: var(--color-text);
      text-decoration: none; /* Remove underline from links */
      font-size: var(--sizeh3);
      padding: 2%;
+     padding-top: 0ch;
      font-family: itc-avant-garde-gothic-pro,sans-serif;
      font-style:normal;
      font-weight: normal;
+     mix-blend-mode: difference;
   }
 
   .right a.active {
@@ -188,7 +239,8 @@ h1:hover {
     bottom: 0;
     overflow: hidden;
     padding: 2%;
-    mix-blend-mode: difference;
+    
+  
 }
 
 
@@ -205,7 +257,8 @@ h1:hover {
   }
 
   .navbarbottom a:hover {
-    color: #2f2f2f;
+    color: transparent;
+    text-shadow: 0 0 5px rgba(3, 252, 36, 0.5);
     font-family: kepler-std, serif;
    font-style: italic;
   }
@@ -341,6 +394,11 @@ h1:hover {
 @media (max-width: 600px) {
     .topnav-centered{
         font-size: 200%;
+    }
+
+    img{
+      width:"240.25" ;
+      height:"70.125";
     }
 
     .right a{
